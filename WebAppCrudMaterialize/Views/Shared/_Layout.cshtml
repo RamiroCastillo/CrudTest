@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebAppCrudMaterialize</title>
+    <link rel="stylesheet" href="~/materialize/css/materialize.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - WebAppCrudMaterialize - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/materialize/js/materialize.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
